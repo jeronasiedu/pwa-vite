@@ -1,13 +1,13 @@
 import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
-import {registerSW} from 'virtual:pwa-register'
+import { registerSW } from 'virtual:pwa-register'
 import './main.scss'
 import './style.css'
 document.querySelector('#app').innerHTML = `
 <h1>Hello Vite!</h1>
 <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
 <div class='container'>
-<h4>I am styled by scss </h4>
+<h4>I am styled by scss. Just changed this to see effect </h4>
 </div>
 `
 const updateSW = registerSW({
