@@ -1,4 +1,3 @@
-import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
 import { registerSW } from 'virtual:pwa-register'
 import './main.scss'
@@ -10,21 +9,21 @@ document.querySelector('#app').innerHTML = `
 <h4>Sass is so good, I just want to update the site </h4>
 </div>
 `
-const updateSW = registerSW({
-  onNeedRefresh() {
-    Toastify({
-      text: `<h4 style='display: inline'>An update is available!</h4>
-      <br><br>
-      <a class='do-sw-update'>Another update</a>  `,
-      escapeMarkup: false,
-      gravity: 'bottom',
-      onclick() {
-        updateSW()
-      },
-    }).showToast()
-  },
-  // onOfflineReady() {},
-})
+// const updateSW = registerSW({
+//   onNeedRefresh() {
+//     Toastify({
+//       text: `<h4 style='display: inline'>An update is available!</h4>
+//       <br><br>
+//       <a class='do-sw-update'>Another update</a>  `,
+//       escapeMarkup: false,
+//       gravity: 'bottom',
+//       onclick() {
+//         updateSW()
+//       },
+//     }).showToast()
+//   },
+//   // onOfflineReady() {},
+// })
 if ('serviceWorker' in navigator) {
   // && !/localhost/.test(window.location)) {
   registerSW()
