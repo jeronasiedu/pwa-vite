@@ -15,11 +15,11 @@ const updateSW = registerSW({
     Toastify({
       text: `<h4 style='display: inline'>An update is available!</h4>
       <br><br>
-      <a class='do-sw-update'>Click to update and reload</a>  `,
+      <a class='do-sw-update'>Another update</a>  `,
       escapeMarkup: false,
       gravity: 'bottom',
       onclick() {
-        updateSW(true)
+        updateSW()
       },
     }).showToast()
   },
