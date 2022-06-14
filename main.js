@@ -6,7 +6,7 @@ document.querySelector('#app').innerHTML = `
 <h1>Hello Vite!</h1>
 <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
 <div class='container'>
-<h4>Sass is so good, I just want to update the site </h4>
+<h4>Sass is so good, Another update </h4>
 </div>
 `
 // const updateSW = registerSW({
