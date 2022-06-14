@@ -1,6 +1,6 @@
 import Toastify from 'toastify-js'
 import 'toastify-js/src/toastify.css'
-import { registerSW } from 'virtual:pwa-register'
+import {registerSW} from 'virtual:pwa-register'
 import './main.scss'
 import './style.css'
 document.querySelector('#app').innerHTML = `
